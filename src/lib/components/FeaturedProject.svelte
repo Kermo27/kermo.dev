@@ -1,4 +1,5 @@
 <script lang="ts">
+    import screenshot from '$lib/assets/kermo-launcher.webp';
 	import { featured } from '$lib/data/projects';
 </script>
 
@@ -14,9 +15,14 @@
 
 	<p class="mt-4 max-w-prose text-muted">{featured.description}</p>
 
-	<figure
-		class="mt-8 flex min-h-64 items-center justify-center border border-border">
-		<figcaption class="font-mono text-sm text-muted">Screenshot</figcaption>
+	<figure class="mt-8 border border-border">
+		<img
+			src={screenshot}
+			alt="Kermo Launcher showing the game library"
+			width="1199"
+			height="752"
+			class="w-full"
+		/>
 	</figure>
 
 	<nav class="mt-6 flex gap-5" aria-label="Project links">
