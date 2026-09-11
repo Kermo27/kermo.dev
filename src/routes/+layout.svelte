@@ -1,14 +1,12 @@
 <script lang="ts">
     import Footer from '$lib/components/Footer.svelte';
 	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
 
 	let { children } = $props();
 </script>
 
 <svelte:head>
     <title>kermo.dev</title>
-    <link rel="icon" href={favicon} />
 </svelte:head>
 
 <a

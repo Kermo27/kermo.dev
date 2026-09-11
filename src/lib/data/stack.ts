@@ -1,10 +1,9 @@
 export interface TechGroup {
-  label: string;
-  items: string[];
+	label: string;
+	items: string[];
 }
 
 export const stack: TechGroup[] = [
-  { label: 'Systems', items: ['Rust', 'Go'] },
-  { label: 'Frontend', items: ['TypeScript', 'Svelte'] },
-  { label: 'Other', items: ['Python', 'C#'] }
+	{ label: 'Focus', items: ['Rust', 'Go', 'TypeScript', 'Svelte', 'Tauri'] },
+	{ label: 'Also', items: ['Python', 'C#'] }
 ];
