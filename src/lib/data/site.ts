@@ -6,9 +6,10 @@ export interface SiteLink {
 
 export const name = 'kermo.dev';
 export const githubUser = 'Kermo27';
+export const siteUrl = 'https://kermo.dev';
 
 export const bio =
-	'Software developer building desktop apps, system tools, and web interfaces. Currently focusing on Rust, Go, TypeScript and C#.';
+	'Software developer building desktop apps, system tools, and web interfaces. Currently focusing on Rust, Go, and TypeScript.';
 
 export const links: SiteLink[] = [
 	{
@@ -22,7 +23,7 @@ export const links: SiteLink[] = [
 		external: true
 	},
 	{
-		label: 'Kontakt',
+		label: 'Contact',
 		href: 'mailto:hello@kermo.dev',
 		external: false
 	}
