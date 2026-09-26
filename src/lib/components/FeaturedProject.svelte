@@ -16,7 +16,7 @@
 		{/each}
 	</ul>
 
-	<p class="mt-4 max-w-prose text-muted">{featured.description}</p>
+	<p class="mt-4 max-w-prose text-muted">{featured.teaser}</p>
 
 	<figure class="mt-8 border border-border">
 		<img
@@ -28,12 +28,7 @@
 		/>
 	</figure>
 
-	<nav class="mt-6 flex flex-wrap gap-5" aria-label="Project links">
-		<a href={featured.sourceUrl} class="link" target="_blank" rel="noreferrer">
-			View Source on GitHub
-		</a>
-		<a href={featured.linuxUrl} class="link">Download Linux</a>
-		<a href={featured.windowsUrl} class="link">Download Windows</a>
+	<p class="mt-6">
 		<a href="/launcher/" class="link">More about the launcher</a>
-	</nav>
+	</p>
 </section>

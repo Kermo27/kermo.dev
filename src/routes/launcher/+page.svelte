@@ -32,10 +32,7 @@
 </ul>
 
 <p class="mt-6 max-w-prose text-muted">{featured.description}</p>
-<p class="mt-4 max-w-prose text-muted">
-	A desktop game library: install, update, and launch titles from one window. Built with Tauri so
-	the UI stays in Svelte while the heavy work runs in Rust.
-</p>
+<p class="mt-4 max-w-prose text-muted">{featured.summary}</p>
 
 <figure class="mt-8 border border-border">
 	<img
@@ -47,10 +44,37 @@
 	/>
 </figure>
 
-<nav class="mt-6 flex flex-wrap gap-5" aria-label="Project links">
-	<a href={featured.sourceUrl} class="link" target="_blank" rel="noreferrer">
-		View Source on GitHub
-	</a>
-	<a href={featured.linuxUrl} class="link">Download Linux</a>
-	<a href={featured.windowsUrl} class="link">Download Windows</a>
-</nav>
+<section class="mt-12" aria-labelledby="download-title">
+	<h2 id="download-title" class="font-mono text-2xl tracking-tight">Download</h2>
+	<nav class="mt-6 flex flex-wrap gap-5" aria-label="Downloads">
+		<a href={featured.linuxUrl} class="link">Linux AppImage</a>
+		<a href={featured.windowsUrl} class="link">Windows installer</a>
+		<a href={featured.releasesUrl} class="link" target="_blank" rel="noreferrer">All releases</a>
+		<a href={featured.sourceUrl} class="link" target="_blank" rel="noreferrer">Source on GitHub</a>
+	</nav>
+</section>
+
+<section class="mt-12" aria-labelledby="features-title">
+	<h2 id="features-title" class="font-mono text-2xl tracking-tight">Features</h2>
+	<ul class="mt-6 max-w-prose list-disc space-y-2 pl-5 text-muted">
+		{#each featured.features as item (item)}
+			<li>{item}</li>
+		{/each}
+	</ul>
+</section>
+
+<section class="mt-12" aria-labelledby="requirements-title">
+	<h2 id="requirements-title" class="font-mono text-2xl tracking-tight">Requirements</h2>
+	<ul class="mt-6 max-w-prose list-disc space-y-2 pl-5 text-muted">
+		{#each featured.requirements as item (item)}
+			<li>{item}</li>
+		{/each}
+	</ul>
+</section>
+
+<section class="mt-12" aria-labelledby="admin-title">
+	<h2 id="admin-title" class="font-mono text-2xl tracking-tight">Admin Tool</h2>
+	<p class="mt-6 max-w-prose text-muted">{featured.admin}</p>
+</section>
+
+<p class="mt-12 max-w-prose text-sm text-muted">{featured.migration}</p>
