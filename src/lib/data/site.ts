@@ -24,7 +24,7 @@ export const links: SiteLink[] = [
 	},
 	{
 		label: 'Contact',
-		href: 'mailto:hello@kermo.dev',
+		href: 'mailto:kacper.juszkiewicz7@gmail.com',
 		external: false
 	}
 ];
