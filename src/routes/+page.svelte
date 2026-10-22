@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ContactForm from '$lib/components/ContactForm.svelte';
 	import Dashboard from '$lib/components/Dashboard.svelte';
 	import FeaturedProject from '$lib/components/FeaturedProject.svelte';
 	import Hero from '$lib/components/Hero.svelte';
@@ -24,3 +25,4 @@
 <Dashboard />
 <TechStack />
 <OtherProjects />
+<ContactForm />

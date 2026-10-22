@@ -9,7 +9,7 @@ export const githubUser = 'Kermo27';
 export const siteUrl = 'https://kermo.dev';
 
 export const bio =
-	'Software developer building desktop apps, system tools, and web interfaces. Currently focusing on Rust, Go, and TypeScript.';
+	'Software developer building desktop apps, system tools, and web interfaces. Currently focusing on Rust, TypeScript, and JavaScript.';
 
 export const links: SiteLink[] = [
 	{
@@ -24,7 +24,7 @@ export const links: SiteLink[] = [
 	},
 	{
 		label: 'Contact',
-		href: 'mailto:kacper.juszkiewicz7@gmail.com',
+		href: '/#contact',
 		external: false
 	}
 ];
